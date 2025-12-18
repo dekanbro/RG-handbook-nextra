@@ -1,0 +1,20 @@
+{
+  "join-the-guild": {
+    "title": "Join the Guild"
+  },
+  "become-an-apprentice": {
+    "title": "Become an Apprentice"
+  },
+  "become-a-member": {
+    "title": "Become a Member"
+  },
+  "champion-a-member": {
+    "title": "Champion a Member"
+  },
+  "raid-guild-shares": {
+    "title": "Raid Guild Shares"
+  },
+  "skills-roles": {
+    "title": "Skills & Roles"
+  }
+}

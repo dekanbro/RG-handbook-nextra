@@ -1,0 +1,17 @@
+{
+  "etiquette": {
+    "title": "Etiquette"
+  },
+  "onboarding": {
+    "title": "Onboarding"
+  },
+  "navigation": {
+    "title": "Navigation"
+  },
+  "meetings": {
+    "title": "Meetings"
+  },
+  "bots": {
+    "title": "Bots"
+  }
+}
