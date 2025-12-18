@@ -9,14 +9,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'EB Garamond';
-  src:
-    url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype'),
-    url('/fonts/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
-  font-display: swap;
-}
-
 :root {
   --rg-moloch-500: #bd482d;
   --rg-moloch-700: #5c2316;
@@ -27,10 +19,11 @@
 
 html {
   background-color: var(--rg-scroll-100);
+  --x-default-font-family: var(--font-eb-garamond), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
-  font-family: 'EB Garamond', 'Times New Roman', serif;
+  font-family: var(--font-eb-garamond), 'Times New Roman', serif;
   color: var(--rg-neutral-800);
   background: radial-gradient(circle at 20% 20%, rgba(255, 214, 194, 0.35), transparent 25%),
     radial-gradient(circle at 80% 0%, rgba(221, 197, 148, 0.28), transparent 30%),

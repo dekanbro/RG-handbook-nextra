@@ -7,8 +7,15 @@ export const revalidate = false;
 import { Banner, Head } from 'nextra/components';
 import { getPageMap } from 'nextra/page-map';
 import { Footer, Layout, Navbar } from 'nextra-theme-docs';
+import { EB_Garamond } from 'next/font/google';
 
 import brandTheme, { logo } from '../theme.config';
+
+const ebGaramond = EB_Garamond({
+  subsets: ['latin'],
+  variable: '--font-eb-garamond',
+  display: 'swap'
+});
 
 const navbar = (
   <Navbar
@@ -29,7 +36,7 @@ export default async function RootLayout({ children }) {
   const pageMap = await getPageMap();
 
   return (
-    <html lang="en" dir="ltr" suppressHydrationWarning>
+    <html lang="en" dir="ltr" suppressHydrationWarning className={ebGaramond.variable}>
       <Head>
         <meta name="theme-color" content="#bd482d" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
